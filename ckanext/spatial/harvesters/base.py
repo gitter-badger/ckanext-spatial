@@ -192,6 +192,15 @@ def guess_resource_format(url, use_mimetypes=True):
             log.debug("returning file type %s (file type detection) from guess_resource_format", file_type)
             return None,file_type
 
+    # add in .sid for mr sid
+    mimetypes.add_type('image/x-mrsid-image', '.sid')
+    # perl and php should look like html, same with .com at the end of a url (this could be fixed differently)
+    mimetypes.add_type('text/html', '.pl')
+    mimetypes.add_type('text/html', '.php')
+    mimetypes.add_type('text/html', '.cgi')
+    mimetypes.add_type('text/html', '.asp')
+    mimetypes.add_type('text/html', '.com')
+
     resource_format, encoding = mimetypes.guess_type(url)
     if resource_format is not None:
         log.debug("returning resource type %s (mime-detection) from guess_resource_format", resource_format)
