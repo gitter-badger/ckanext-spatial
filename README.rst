@@ -50,3 +50,8 @@ http://www.fsf.org/licensing/licenses/agpl-3.0.html
 .. _pycsw: http://pycsw.org
 .. _GeoJSON: http://geojson.org
 
+
+
+.. image:: https://badges.gitter.im/Join%20Chat.svg
+   :alt: Join the chat at https://gitter.im/18F/ckanext-spatial
+   :target: https://gitter.im/18F/ckanext-spatial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
